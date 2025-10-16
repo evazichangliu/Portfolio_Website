@@ -41,22 +41,3 @@ function showSlides(n) {
   
   slides[slideIndex-1].style.display = "block";
 }
-
-function resize(n) {
-  let columns = document.getElementsByClassName("column");
-  let cardContent = document.getElementsByClassName("card-content");
-  //const style = getComputedStyle(document.querySelector(".row"));
-
-  for (i = 0; i < columns.length; i++) {
-    if (n == -1) {
-      columns[i].style.width = "16.67%";
-      cardContent[i].style.visibility = "hidden";
-    } else if (i == n) {
-      columns[i].style.width = "20.67%";
-      cardContent[i].style.visibility = "visible";
-    } else {
-      columns[i].style.width = "15.67%";
-      cardContent[i].style.visibility = "hidden";
-    }
-  }
-}
