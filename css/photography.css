@@ -56,8 +56,14 @@ body {
   aspect-ratio: 1 / 1;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+
+  text-align: center;
+  text-shadow: 2px 3px 7px black;
+  text-decoration:none;
+  color: white;
+
+  cursor: pointer;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
