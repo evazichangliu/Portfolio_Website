@@ -95,7 +95,7 @@ a {
 .slideshow-container {
   position: relative;
   width: 100%;
-  height: calc(100vh - (100vw * 2 / (3 * 6)));
+  height: 100vh;
 
   background-color: black;
   flex-grow: 1;
@@ -181,6 +181,5 @@ a {
     max-width: 80%;
     left: 10%;
     font-size: 20px;
-  }nsform: translateX(-50%);
   }
 }

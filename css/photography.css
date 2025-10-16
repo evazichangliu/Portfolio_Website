@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add a background color to the page. */
+body {
+  background-color: #ededed;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+
+  font-family: Montserrat;
+  color: black;
+}
+
+.horizontal-line {
+  height: 4px;
+  background-color: black;
+}
+
+
+/* Header */
+.header {
+  position: relative;
+  //width: 100%;
+  //margin-right: 30px;
+  top: 70px;
+  padding-left: 30px;
+}
+
+
+/* Images */
+.images {
+  position: relative;
+  display: block;
+  width: 100%;
+  top: 60px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.image-row {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  //right: 30px;
+  padding-top: 30px;
+  //padding-bottom: 15px;
+  padding-right: 30px;
+  gap: 30px;
+}
+
+.image-card {
+  //float: left;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .image-row {
+    flex-wrap: wrap;
+  }  
+
+  .image-card {
+    width: 100%;
+  }
+}

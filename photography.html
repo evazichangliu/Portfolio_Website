@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+  <title>Photography | Eva Liu</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/photography.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div class="navbar"></div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1 style="text-transform: uppercase">Photography</h1>
+      <hr class="horizontal-line">
+    </div>
+
+    <!-- Images -->
+    <div class="images">
+      <div class="image-row">
+        <div class="image-card" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/images/street/_50A0074.avif')"></div>
+        <div class="image-card" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/images/p_day/IMG_7210.avif')"></div>
+      </div>
+      <div class="image-row">
+        <div class="image-card" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/images/paris/DSC01632.avif')"></div>
+        <div class="image-card" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/images/nyc_lunar_new_year/_50A0945-2.avif')"></div>
+      </div>
+      <div class="image-row">
+        <div class="image-card" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/images/indoor/_50A0822.avif')"></div>
+        <div class="image-card" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/images/nick_shea/_50A0607.avif')"></div>
+      </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("/nav.html", function(data){
+        $(".navbar").replaceWith(data);
+      });
+    </script>
+  </body>
+</html>
